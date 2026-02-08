@@ -42,7 +42,7 @@ async function getKlas() {
     let studentHTML = 
     `<li>
         <h2><span>${student.fav_emoji}</span> ${student.name}</h2>
-        <img src="${student.avatar}" alt="${student.name}">
+        <div><img src="${student.avatar}" alt="${student.name}"></div>
         <label><input type="checkbox">laat de naam zien</label>
     </li>`
 
@@ -81,7 +81,7 @@ async function getComplete() {
     let studentHTML = 
     `<li>
         <h2><span>${student.fav_emoji}</span> ${student.name}</h2>
-        <img src="${student.avatar}" alt="${student.name}">
+        <div><img src="${student.avatar}" alt="${student.name}"></div>
         <label><input type="checkbox">laat de naam zien</label>
     </li>`
 
@@ -122,12 +122,10 @@ async function getDummy() {
     // let spookNr = Math.floor( Math.random * 8 ) + 1
     let spookNr = Math.floor( Math.random() * 8 ) + 1
 
-    console.log(spookNr);
-
     let studentHTML = 
     `<li>
         <h2><span>${ student.fav_emoji ? student.fav_emoji : '👻'}</span> ${student.name}</h2>
-        <img src="${ student.avatar ? student.avatar : 'images/spook'+spookNr+'.png' }" alt="${student.name}" onerror="this.src='images/404.png'">
+        <div><img src="${ student.avatar ? student.avatar : 'images/spook'+spookNr+'.png' }" alt="${student.name}" onerror="this.src='images/404.png'"></div>
         <label><input type="checkbox">laat de naam zien</label>
     </li>`
 
@@ -165,10 +163,7 @@ async function getCombi() {
   
 
   responseData.forEach( student => {
-    // let spookNr = Math.floor( Math.random * 8 ) + 1
     let spookNr = Math.floor( Math.random() * 8 ) + 1
-
-    console.log(spookNr);
 
     let studentHTML = 
     `<li>
@@ -224,7 +219,7 @@ async function getHulp() {
     let imgHTML = 
       `<li>
           <h2><span>${ student.fav_emoji ? student.fav_emoji : ''}</span> ${student.name}</h2>
-          <img src="${student.avatar}" alt="${student.name}"></img>
+          <div><img src="${student.avatar}" alt="${student.name}"></img></div>
           <label><input type="checkbox">laat de naam zien</label>
       </li>`
 
