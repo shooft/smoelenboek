@@ -5,7 +5,9 @@
 
 html {
   overflow-x:clip;
-  background:fixed linear-gradient(in oklch, skyblue, red) 50% / 100dvw 100dvh;
+  background-attachment:fixed;
+  background-image:linear-gradient(in oklch, skyblue, red);
+  background-size:cover;
 
   font-family:saira, sans-serif;
 }
