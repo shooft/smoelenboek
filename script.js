@@ -168,7 +168,7 @@ async function getCombi() {
     let studentHTML = 
     `<li>
         <h2><span>${ student.fav_emoji ? student.fav_emoji : ''}</span> ${student.name}</h2>
-        <img src="${ student.avatar ? student.avatar : 'images/spook'+spookNr+'.png' }" alt="${student.name}" onerror="this.src='images/404.png'">
+        <div><img src="${ student.avatar ? student.avatar : 'images/spook'+spookNr+'.png' }" alt="${student.name}" onerror="this.src='images/404.png'"></div>
         <label><input type="checkbox">laat de naam zien</label>
     </li>`
 
