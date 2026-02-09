@@ -128,8 +128,8 @@ li p {
   place-items:center;
   place-content:center;
 
-  background-color:#fff6;
-  /* background-image: repeating-linear-gradient(135deg, #fff0 0 .25em, #fff3 0 .35em); */
+  /* background-color:#fff6; */
+  background-image: repeating-linear-gradient(135deg, #fff0 0 .25em, #fff3 0 .35em);
   border-radius:2em;
   corner-shape:squircle;
 }
